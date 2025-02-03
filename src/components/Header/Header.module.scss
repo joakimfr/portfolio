@@ -6,6 +6,19 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 48px 0 48px;
+  position: absolute;
+  width: 80%;
+  position: fixed;
+  top: 48;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  z-index: 999;
+
+  h2 {
+    color: #000000;
+    font-size: 48px;
+  }
 }
 
 

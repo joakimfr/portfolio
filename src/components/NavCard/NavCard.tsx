@@ -6,22 +6,26 @@ export default function NavCard() {
       <ul>
         <li>
           <a href="#about-me">
-            <span>01</span> About Me
+            <h2>01. About me</h2>
+            <div className={styles.line}></div>
           </a>
         </li>
         <li>
           <a href="#projects">
-            <span>02</span> My Projects
+            <h2>02. My projects</h2>
+            <div className={styles.lineRight}></div>
           </a>
         </li>
         <li>
-          <a href="#resume">
-            <span>03</span> Resume
+          <a className={styles.alist} href="#resume">
+            <h2>03. Resume</h2>
+            <div className={styles.line}></div>
           </a>
         </li>
         <li>
           <a href="#contact">
-            <span>04</span> Contact
+            <h2>04. Contact me</h2>
+            <div className={styles.lineRight}></div>
           </a>
         </li>
       </ul>

@@ -1,6 +1,8 @@
 import Header from "@/components/Header/Header";
 import NavCard from "@/components/NavCard/NavCard";
-import styles from './page.module.scss'
+import styles from "./page.module.scss";
+// import AboutMe from "@/components/AboutMe/AboutMe";
+import MyProjects from "@/components/MyProjects/MyProjects";
 
 export default function Home() {
   return (
@@ -10,9 +12,19 @@ export default function Home() {
         <article className={styles.article}>
           <h1 className={styles.title}>Frontend Developer.</h1>
           <h2 className={styles.subTitle}>Joakim Fritz</h2>
-          <p>Recent Frontend Developer graduate based in Jönköping, Sweden. Passionate about creating responsive and user-friendly web applications. Currently looking for exciting opportunities to bring my skills and creativity to the next level. .  </p>
+          <p>
+            Recent Frontend Developer graduate based in Jönköping, Sweden.
+            Passionate about creating responsive and user-friendly web
+            applications. Currently looking for exciting opportunities to bring
+            my skills and creativity to the next level. .{" "}
+          </p>
         </article>
-        <NavCard />
+        <div>
+          <NavCard />
+        </div>
+      </section>
+      <section>
+        <MyProjects />
       </section>
     </div>
   );

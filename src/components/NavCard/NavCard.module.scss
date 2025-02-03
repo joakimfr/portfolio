@@ -1,0 +1,47 @@
+.navCard {
+  
+ ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+  }
+
+  h2 {
+    color: #D1D1D1;
+    transition: text-shadow 0.3s ease;
+  }
+
+}
+
+.line {
+  width: 40%;
+  height: 2px;
+  background-color: #00FFBF;
+  border-radius: 8px;
+  transition: width 0.3s ease;
+}
+
+.lineRight {
+  width: 50%;
+  height: 2px;
+  background-color: #00FFBF;
+  border-radius: 8px;
+  align-self: flex-end;
+  transition: width 0.3s ease;
+}
+
+.navCard a:hover h2 {
+  text-shadow: 0 0 15px rgba(0, 255, 191, 0.7);
+}
+
+.navCard a:hover .line,
+.navCard a:hover .lineRight {
+  width: 100%;
+}
